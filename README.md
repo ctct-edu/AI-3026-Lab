@@ -1,18 +1,17 @@
 # Azure での AI エージェント開発
 
-このリポジトリの演習は、Microsoft Azure 上で AI エージェントを構築する際に開発者が行う一般的なタスクを体験的に学習するために設計されています。
+# ラボマニュアル
 
-> **注意**: 演習を完了するには、必要な Azure リソースおよび生成 AI モデルをプロビジョニングするための十分な権限とクォータを持つ Azure サブスクリプションが必要です。まだお持ちでない場合は、[Azure アカウント](https://azure.microsoft.com/free) にサインアップしてください。新規ユーザー向けに、最初の 30 日間のクレジットが含まれる無料試用版があります。
+## はじめに
 
-演習は[このリポジトリの GitHub Pages サイト](https://go.microsoft.com/fwlink/?linkid=2310820)で確認できます。
+本マニュアルはCTCテクノロジー主催「[AI-3026 Azure で AI エージェントを開発する](https://www.school.ctc-g.co.jp/course/P779.html)」のラボマニュアルになります。
 
-> **注意**: これらの演習は単独でも完了できますが、[Microsoft Learn](https://learn.microsoft.com/training/paths/develop-ai-agents-azure/) のモジュールを補完するように設計されています。Microsoft Learn では、演習の基になっている概念についてより詳しく学ぶことができます。
+## マニュアルの見かた
 
-このリポジトリのアプリケーションのコードをローカルで実行する場合は、Python 3.12 以上が必要です。
+講師の指示に従い、「**[Exercises](https://github.com/ctct-edu/AI-3026-Lab/tree/main/Instructions/Exercises)**」のフォルダへ移動してください。
 
-## 問題の報告
-
-演習で問題が発生した場合は、このリポジトリの **issues** として報告してください。
+フォルダ内に各演習のラボマニュアルが掲載されています。
+ラボマニュアルに従って演習を実施してください。
 
 ## 出典
 
