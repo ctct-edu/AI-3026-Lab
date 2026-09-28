@@ -40,13 +40,31 @@ lab:
 
 1. サイドバーの Foundry Toolkit アイコンを選択します。
 
-    まだサインインしていない場合は、Azure アカウントへのサインインを求めるプロンプトが表示されます。
+    **FOUNDRY TOOLKIT** ペインが開き、**[MY RESOURCES]** の下に **[Set Foundry Project]** が表示されます。
 
-1. **[Microsoft Foundry Resources]** の下で **[プロジェクトの作成]** を選択します。
+    ![FOUNDRY TOOLKIT ペインのスクリーンショット。MY RESOURCES の下に Set Foundry Project、Models、Agents、Tools、Knowledge、Evaluations が表示されている。](../Media/01_01.png)
 
-    既定のプロジェクトがすでにアクティブな場合、プロジェクト名が **[マイ リソース]** の下に表示されます。アクティブなプロジェクトを右クリックして **[Switch Default Project in Azure Extension]** を選択することで、新しいプロジェクトを作成できます。
+1. **[MY RESOURCES]** の下で **[Set Foundry Project]** を選択し、画面上部に表示されたメニューで **[Create project]** を選択します。
 
-1. Azure サブスクリプションとリソース グループを選択し、Foundry プロジェクトの名前を入力して、この演習用の新しいプロジェクトを作成します。**（プロジェクト名の例：AI3026-Lab01-20260806-XX、XXは各自配布されたアカウントの連番）** 
+    ![Set Foundry Project を選択すると表示される Select an action メニューのスクリーンショット。Switch project と Create project が表示されている。](../Media/01_02.png)
+
+    既定のプロジェクトがすでに設定されている場合は、**[Set Foundry Project]** の代わりにプロジェクト名が **[MY RESOURCES]** の下に表示されます。プロジェクト名の横にある歯車アイコンを選択して **[Switch Default Project]** を選択し、表示されたメニューで **[Create project]** を選択します。
+
+1. **[Select subscription]** で Azure サブスクリプションを選択します。
+
+    まだ Azure にサインインしていない場合は、**[Sign in to Azure...]** を選択します。
+
+    ![Select subscription のスクリーンショット。Sign in to Azure... が表示されている。](../Media/01_03.png)
+
+    「拡張機能 'Foundry Toolkit for VS Code' が Microsoft を使用してサインインしようとしています」というダイアログが表示されたら **[許可]** を選択し、ブラウザーで Azure アカウントにサインインします。サインイン後、VS Code に戻ってサブスクリプションを選択します。
+
+    ![拡張機能 'Foundry Toolkit for VS Code' が Microsoft を使用してサインインしようとしています、というダイアログのスクリーンショット。許可ボタンとキャンセル ボタンがある。](../Media/01_05.png)
+
+1. **[Choose a resource group]** で、各自に割り当てられた既存のリソース グループ（**AI3026StudentXX**）を選択します。**[Create new resource group]** は選択しないでください。
+
+    ![Choose a resource group のスクリーンショット。Create new resource group と既存のリソース グループ AI3026Student99 (eastus) が表示されている。](../Media/01_04.png)
+
+1. Foundry プロジェクトの名前を入力して、この演習用の新しいプロジェクトを作成します。**（プロジェクト名の例：AI3026-Lab01-20260806-XX、XXは各自配布されたアカウントの連番）** 
 
     デプロイが完了すると、プロジェクトが Foundry Toolkit ペインに既定のプロジェクトとして表示されます。
 
@@ -56,7 +74,7 @@ lab:
 
 1. 「プロジェクトが正常にデプロイされました」というポップアップが表示されたら、**[新しいモデルのデプロイ]** ボタンを選択します。モデル カタログが開きます。
 
-    > **ヒント**: **[リソース]** セクションの **[モデル]** の横にある **[+]** アイコンを選択するか、**F1** キーを押して **[Foundry Toolkit: Show model catalog]** コマンドを実行してモデル カタログにアクセスすることもできます。
+    > **ヒント**: **[MY RESOURCES]** の **[Models]** の横にある **[+]** アイコンを選択するか、**F1** キーを押して **[Foundry Toolkit: Show model catalog]** コマンドを実行してモデル カタログにアクセスすることもできます。
 
     ![「プロジェクトが正常にデプロイされました」ポップアップと Deploy a new model ボタンのスクリーンショット。](../Media/Lab01_create_model_window.png)
 
@@ -80,11 +98,13 @@ lab:
 
     ![モデル一覧に gpt-5-mini が Status = Success で表示されたスクリーンショット。](../Media/Lab01_model_view.png)
 
-1. Foundry Toolkit のサイドバーで、**[MY RESOURCES]** の下に作成したプロジェクト（例: `AI3026-Lab01-20260806-XX`）が表示され、その配下に **Models**・**Agents**・**Tools**・**Knowledge**・**Evaluations** などのツリーが展開できることを確認します。
+1. Foundry Toolkit のサイドバーで、**[MY RESOURCES]** の下に作成したプロジェクト（例: `AI3026-Lab01-20260806-XX`）が表示され、その下に **Models**・**Agents**・**Tools**・**Knowledge**・**Evaluations** などが表示されていることを確認します。
 
-    ![Foundry Toolkit サイドバーのプロジェクト ツリー。MY RESOURCES 配下にプロジェクトと Models / Agents / Tools / Knowledge / Evaluations が表示されている。](../Media/vs-code-endpoint.png)
+    ![Foundry Toolkit サイドバーのスクリーンショット。MY RESOURCES の下にプロジェクト名と Models / Agents / Tools / Knowledge / Evaluations が表示されている。](../Media/vs-code-endpoint.png)
 
-1. プロジェクト デプロイの名前を右クリックし、**[プロジェクト エンドポイントのコピー]** を選択します。次の手順でエージェントを Foundry プロジェクトに接続するためにこの URL が必要です。
+1. **[MY RESOURCES]** の下のプロジェクト名の横にある歯車アイコンを選択し、**[Copy Project Endpoint]** を選択します。次の手順でエージェントを Foundry プロジェクトに接続するためにこの URL が必要です。
+
+    ![プロジェクト名の横の歯車アイコンを選択したときのメニューのスクリーンショット。Switch Default Project、Copy Project Endpoint、Copy Project API Key、Copy Azure OpenAI Endpoint が表示されている。](../Media/01_06_copyendpoint.png)
 
 ## スターター コードを開く
 
@@ -104,7 +124,7 @@ lab:
     pip install -r requirements.txt
     ```
 
-1. `.env` ファイルを開き、`your_project_endpoint` プレースホルダーをプロジェクトのエンドポイント（Foundry Toolkit VS Code 拡張機能のプロジェクト デプロイ リソースからコピーしたもの）に置き換え、MODEL_DEPLOYMENT_NAME 変数がモデルのデプロイ名に設定されていることを確認します。変更後に **Ctrl+S** キーを押してファイルを保存します。
+1. `.env` ファイルを開き、`your_project_endpoint` プレースホルダーをプロジェクトのエンドポイント（Foundry Toolkit の **[Copy Project Endpoint]** でコピーしたもの）に置き換え、MODEL_DEPLOYMENT_NAME 変数がモデルのデプロイ名に設定されていることを確認します。変更後に **Ctrl+S** キーを押してファイルを保存します。
 
 カスタム関数をツールとして使用する AI エージェントを作成する準備ができました。
 

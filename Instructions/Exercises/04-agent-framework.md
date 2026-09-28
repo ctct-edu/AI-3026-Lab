@@ -37,7 +37,7 @@ lab:
     ![Foundry Toolkit サイドバーのプロジェクト ツリー。MY RESOURCES 配下にプロジェクトと Models / Agents / Tools / Knowledge / Evaluations が表示されている。](../Media/vs-code-endpoint.png)
 
 1. **Models** を展開し、`gpt-5-mini` のデプロイが **Success** になっていることを確認します。
-1. プロジェクト デプロイの名前を右クリックし、**[プロジェクト エンドポイントのコピー]** を選択します。この URL を次の手順で `.env` に設定します。
+1. **[MY RESOURCES]** の下のプロジェクト名の横にある歯車アイコンを選択し、**[Copy Project Endpoint]** を選択します。この URL を次の手順で `.env` に設定します。
 
 > **注意**: 演習 01 を実施していない場合は、先に [演習 01](01-agent-custom-tools.md) の「Foundry プロジェクトの作成」「モデルのデプロイ」を完了してください。
 

@@ -167,17 +167,24 @@ Foundry IQ の設定が完了しました。
 > **注意**: Foundry Toolkit 拡張機能は演習環境にインストール済みです。拡張機能のインストール作業は不要です。一部の UI では **AI Toolkit** と表示される場合がありますが、同じ拡張機能です。
 
 1. サイドバーの **Foundry Toolkit** アイコンを選択し、プロンプトが表示されたら Azure アカウントにサインインします。
-1. **[MY RESOURCES]** で **[既定のプロジェクトの設定]** を選択し、先ほど作成したプロジェクトを選択します。
-1. プロジェクト セクションを展開します。**[Agents]** で `product-expert-agent` エージェントを選択して **Agent Builder** ウィンドウを開きます。
+1. **[MY RESOURCES]** で **[Set Foundry Project]** を選択し、画面上部に表示されたメニューで **[Switch project]** を選択して、先ほど作成したプロジェクトを選択します。
+
+    ![Set Foundry Project を選択すると表示される Select an action メニューのスクリーンショット。Switch project と Create project が表示されている。](../Media/01_02.png)
+
+    > **注意**: 演習 01 のプロジェクトが既定のプロジェクトとして設定されている場合は、**[Set Foundry Project]** の代わりにそのプロジェクト名が表示されます。プロジェクト名の横にある歯車アイコンを選択して **[Switch Default Project]** を選択し、この演習で作成したプロジェクトに切り替えてください。
+
+1. **[MY RESOURCES]** の **[Agents]** を展開し、`product-expert-agent` エージェントを選択して **Agent Builder** ウィンドウを開きます。
+
+    ![Agent Builder のスクリーンショット。上部に Prompt Agent のドロップダウンと Save to Foundry ボタン、その下に Playground / Conversations / Evaluation タブがあり、Playground タブに BASIC INFORMATION（Agent name、Model、Instructions）と TOOL セクションが表示されている。](../Media/03_01_AgentBuilder.png)
 
     > **注意**: 左サイドバーには **[Tools]** という項目もありますが、これは Foundry Toolkit 全体で使える組み込みツールの一覧（ツール カタログ）であり、特定のエージェントに紐づいた設定ではありません。今回の操作対象ではないので選択しないでください。
 
 1. Agent Builder が開いたら、上部の **[Playground] / [Conversations] / [Evaluation]** タブのうち、**[Playground]** タブが選択されていることを確認します（前回開いていたタブが記憶され、別のタブが表示されている場合があります）。
-1. **[Playground]** タブ内の **[ツール]** セクションで **[Foundry IQ]**（ナレッジ ベース）ツールを見つけ、3 点ドット（**...**）を選択してツール設定のポップアップを開きます。
+1. **[Playground]** タブ内の **[BASIC INFORMATION]** の下にある **[TOOL]** セクション（表示されていない場合は下にスクロール）で **[Foundry IQ]**（ナレッジ ベース）ツールを見つけ、3 点ドット（**...**）を選択してツール設定のポップアップを開きます。
 
     > **注意**: エージェントに複数のツールが表示される場合があります。Foundry ポータルは既定で新しいエージェントに **Web 検索**ツールを追加するため、他のツールではなく **Foundry IQ** ナレッジ ベース ツールの 3 点ドットを選択してください。
 1. **[ツールを使用する前に承認を要求する]** ドロップダウンで **[すべてのツールの承認を求める]** を選択し、変更を保存します。
-1. 画面右上の **[Save to Foundry]** ボタンをクリックし、変更をエージェントに保存します。
+1. Agent Builder 上部の右側にある **[Save to Foundry]** ボタンをクリックし、変更をエージェントに保存します。
 
 エージェントは Foundry IQ を使用してナレッジ ベースを検索するたびに承認を要求するようになります。次に作成するクライアント アプリがこれを処理します。
 
